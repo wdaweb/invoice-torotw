@@ -11,7 +11,7 @@
 
 <body>
     <?php include "./include/header.php"; ?>
-    <h3 class="text-center text-success border-bottom border-danger" style="font-family:Microsoft JhengHei; font-size: 2rem; padding-bottom:1rem">修改發票</h3>
+    <h3 class="text-center text-success  border-danger" style="font-family:Microsoft JhengHei; font-size: 2rem; padding-bottom:1rem">修改發票</h3>
 
     <div class="d-flex justify-content-center form-control form-control-lg border-0" placeholder=".form-control-lg ">
         <form name="invoiceForm" action="save_invoice.php" method="post">

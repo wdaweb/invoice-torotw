@@ -26,9 +26,9 @@ $data = [
 ];
 $res = save("invoice", $data);
 if ($res == 1) {
-    echo "<h1 class='m-2 p-2 btn-success border-bottom  d-flex justify-content-center'>新增成功</h1><br>";
+    echo "<h1 class='m-2 p-2 btn-success border-bottom  d-flex justify-content-center'>成功</h1><br>";
 } else {
-    echo "<h1 class='m-2 p-2 btn-danger border-bottom  d-flex justify-content-center'>新增失敗</h1><br>";
+    echo "<h1 class='m-2 p-2 btn-danger border-bottom  d-flex justify-content-center'>失敗</h1><br>";
 }
 
 

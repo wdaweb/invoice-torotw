@@ -12,38 +12,6 @@
 <body>
     <?php include "./include/header.php"; ?>
     <h3 class="text-center text-success  " style="font-family:Microsoft JhengHei; font-size: 2rem;">選擇統一發票對獎年月份</h3>
-    <form class=" text-center d-flex justify-content-center border-bottom border-danger" style="margin:1rem; padding:1rem" name="invoiceForm" action="award.php" method="post">
-
-        <label class="btn btn-outline-secondary" for="year">
-            <select class="btn btn-info" name="year" value=<?= $_POST["year"] ?>>
-
-                <option value="2020">2020年</option>
-                <option value="2021">2021年</option>
-                <option value="2022">2022年</option>
-            </select>
-
-            <button class="btn btn-info" type="submit" name="period" value="1">1、2月</button>
-            <button class="btn btn-info" type="submit" name="period" value="2">3、4月</button>
-            <button class="btn btn-info" type="submit" name="period" value="3">5、6月</button>
-            <button class="btn btn-info" type="submit" name="period" value="4">7、8月</button>
-            <button class="btn btn-info" type="submit" name="period" value="5">9、10月</button>
-            <button class="btn btn-info" type="submit" name="period" value="6">11、12月</button>
-        </label>
-        <!--  -->
-
-        <script>
-            function SetPage(form) {
-                form.elements['year'].value = <?= $_POST["year"]; ?>;
-            }
-            SetPage(document.forms['invoiceForm']);
-        </script>
-
-
-    </form>
-
-
-
-
 
     <?php
     $period = ceil(date("n") / 2);
